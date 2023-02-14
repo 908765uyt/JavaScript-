@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Switch Case</title>
+</head>
+<body>
+   <script>
+      var a,b,add,sub,mul,div,ch;
+      a=parseInt(prompt("Enter a number"));
+      b=parseInt(prompt("Enter a number"));
+      alert("1:Addition\n 2:Subtraction\n 3:Multiplication\n 4:Division");
+      ch=parseInt(prompt("Which operation you want to perform? Enter your choice:"));
+      switch(ch)
+       {
+         case 1:
+            add= a+b;
+            alert("Addition is: "+add);
+            break;
+         case 2:
+            sub= a-b;
+            alert("Subtraction is: "+sub);
+            break;
+         case 3:
+            mul= a*b;
+            alert("Multiplication is: "+mul);
+            break;
+         case 4:
+            div= a/b;
+            alert("Division is: "+div);
+            break;
+        default:
+         alert("Enter a right choice");
+         
+      }
+
+   </script>
+</body>
+</html>
