@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script>
+   function clr1()
+{
+   document.bgColor="pink";
+   setTimeout(clr2, 1000)
+}
+function clr2()
+{
+   document.bgColor="black";
+   setTimeout(clr3, 1000)
+}
+function clr3()
+{
+   document.bgColor="aqua";
+   setTimeout(clr4, 1000)
+}
+function clr4()
+{
+   document.bgColor="green";
+   setTimeout(clr5, 1000)
+}
+function clr5()
+{
+   document.bgColor="red";
+   setTimeout(clr1, 1000)
+}
+</script>
+</head>
+<body>
+   <button onclick="clr1()">Update colors</button>
+</body>
+</html>

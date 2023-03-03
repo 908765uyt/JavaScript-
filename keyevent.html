@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<script>
+   function keypress()
+{
+   alert("you have press the key");
+
+}
+
+   function kdown()
+   {
+      document.getElementById("t2").style.color="red";
+      document.getElementById("t2").style.fontSize="20px";
+
+   }
+   function kup()
+   {
+      var a=document.getElementById("t3");
+      a.value=a.value.toUpperCase();
+   }
+
+   function sub()
+{
+   alert("Submitted the form");
+}
+
+</script>
+<body>
+   <form>
+      First name:<input type=" text" id="t1" onkeypress="keypress()"><br><br>
+      Middle name:<input type=" text" id="t2" onkeydown="kdown()"><br><br>
+      Last name:<input type=" text" id="t3" onkeyup="kup()"><br><br>
+      <input type="button" onclick="sub()" value="Submit">
+   </form>
+</body>
+</html>
