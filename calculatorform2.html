@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            let a=parseInt(frm1.t1.value);
+            let b=parseInt(frm1.t2.value);
+            frm1.t3.value=a+b;
+        }
+
+        function sub(){
+            let a=parseInt(frm1.t1.value);
+            let b=parseInt(frm1.t2.value);
+            frm1.t3.value=a-b;
+        }
+
+        function mul(){
+            let a=parseInt(frm1.t1.value);
+            let b=parseInt(frm1.t2.value);
+            frm1.t3.value=a*b;
+        }
+
+        function div(){
+            let a=parseInt(frm1.t1.value);
+            let b=parseInt(frm1.t2.value);
+            frm1.t3.value=a/b;
+        }
+    </script>
+</head>
+<body>
+  <form name="frm1">
+    <label>Enter 1st Number:</label>
+    <input type="text" name="t1"><br><br>
+    <label>Enter 2nd Number:</label>
+    <input type="text" name="t2"><br><br>
+    <label>Result:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" name="t3"><br><br>
+    <input type="button" onclick="add()" value="+">&nbsp;&nbsp;&nbsp;
+    <input type="button" onclick="sub()" value="-">&nbsp;&nbsp;&nbsp;
+    <input type="button" onclick="mul()" value="*">&nbsp;&nbsp;&nbsp;
+    <input type="button" onclick="div()" value="/"><br><br>
+  </form>  
+</body>
+</html>
