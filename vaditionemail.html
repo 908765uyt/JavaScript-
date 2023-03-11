@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<script>
+   function validation()
+   {
+      var e=document.frm1.t1;
+      var v = /^[a-z0-9]+@[a-z]+(?:\.[a-z]+)*$/;
+      if(e.value=="")
+      {
+         alert("Please enter email id");
+         document.frm.t1.focus();
+      } 
+      else if (e.value.match(v))
+      {
+         alert("Valid email address!");
+         document.frm1,t1.focus(); 
+      }
+      else{
+         alert("Invalid email address!");
+         document.frm1.t1.focus();
+      }
+   }
+</script>
+<body>
+   <form name="frm1">
+      Enter Email:<input type="text" name="t1"><br>
+      <input type="button" value="validation" onclick="validation()">
+   </form>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Validation username and password</title>
+</head>
+<script>
+   function valid()
+   {
+      var unm=frm.t1.value;
+      var psd=frm.pwd.value;
+      var cnt1=unm.length;
+      var cnt2=psd.length;
+
+      //username validation
+        if(cnt1==0)
+         
+          {
+            alert("Please enter username.");
+            frm.t1.focus();
+          }
+          
+          else if(cnt1<4||cnt1>8)
+           {      
+            alert("Username should be from 4 to 8 characters");
+            frm.t1.focus();
+          }
+          for(i=0;i<=cnt1;i++)
+          {
+            if((unm[i]=='@')||(unm[i]=='#')||(unm[i]=='$')||(unm[i]=='%'))
+            {
+               alert("special symbols are not allowed in username");
+               frm.t1.focus();
+            }
+          }
+          //Password validation
+        if(cnt2==0)
+        {
+         alert("Please Enter Password.");
+         frm.pwd.focus();
+        }
+        else if(cnt2<8||cnt2>12)
+          {
+            alert("Password should be from 8 to 12 character");
+            frm.pwd.focus();
+          }
+          for(j=0;j<=cn21;j++)
+          {
+            if((psd[i]=='@')||(psd[i]=='#')||(psd[i]=='$')||(psd[i]=='%'))
+            {
+               alert ("special symbols are not allowed in Pasword");
+               frm.pwd.focus();
+            }
+          }
+         }
+   
+</script>
+<body>
+   <form name="frm">
+      User Name:<input type="text" name="t1"><br>
+      Password:<input type="password" name="pwd"><br>
+      <input type="button" value="login" onclick="valid()">
+   </form>
+
+</body>
+</html>
